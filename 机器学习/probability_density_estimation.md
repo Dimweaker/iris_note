@@ -54,7 +54,69 @@ $$
 K(x)=\frac{1}{\sqrt{2\pi}}\exp{(\frac{-x^2}{2})}
 $$
 
+##### 对称性
 
+有：
+
+$$
+K(x)=K(-x)
+$$
+
+显然，$K(x-x^{(i)})$关于$x=x^{(i)}$对称
+
+##### 缩放
+
+由于$f(x)$和$cf(cx)$面积相同
+要使面积为1，则有
+
+$$
+\int_{-\infty}^{+\infty}K(x)dx=\frac{1}{h}\int_{-\infty}^{+\infty}K(\frac{x}{h})dx=1
+$$
+
+##### 叠加的可视化
+
+![image.png](assets/叠加的可视化.png)
+
+### 带宽
+
+带宽$h$的选取对概率密度估计函数至关重要。$h$小，核函数细高；$h$大，核函数矮胖。
+
+![image.png](assets/带宽1.png)
+
+![image.png](assets/带宽2.png)
+
+过小的$h$，会让概率密度估计曲线不够平滑；而太大的 $h$，会让概率密度曲线过于平滑，大量有用信息被忽略。
+
+### 核函数
+
+总结来说，核函数需要满足两个重要条件：
+
+1. 对称性；
+2. 面积为1。
+
+![image.png](assets/常见核函数1.png)
+
+![image.png](assets/常见核函数2.png)
+
+![image.png](assets/常见核函数概率密度估计.png)
+
+## 多元KDE
+
+$$
+\widehat{f}_X(x)=\frac{1}{n}\sum_{i=1}^nK_H(x-x^{(i)})
+$$
+
+$$
+K_H(x)=det(H)^{-\frac{1}{2}}K(H^{-\frac{1}{2}}x)
+$$
+
+以高斯核函数为例，
+
+$$
+K(x)=\frac{1}{\sqrt{2\pi}}\exp{(\frac{-x^Tx}{2})}
+$$
+
+![image.png](assets/二元高斯KDE.png)
 
 
 

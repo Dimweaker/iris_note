@@ -12,5 +12,10 @@ $$
 $f_{\tiny{X,Y}}(x,C_K)$为**联合概率**(Joint)。
 $f_{\tiny{X}}(x)$为**证据因子**(evidence)，仅代表$x$的分布情况。
 $p_{\tiny{Y}}(C_K)$为**先验概率**(prior)，表示样本中$C_k$的占比。
-$f_{\tiny{X|Y}}(x|C_K)$为**似然概率**(likelihood)，表示$C_k$中出现$x$的可能性。
+$f_{\tiny{X|Y}}(x|C_K)$为**似然概率**(likelihood)，表示
+$C_k$中出现$x$的可能性。
+
+## 似然概率
+
+似然概率$f_{\tiny{X|Y}}(x|C_K)$本身是条件概率l
 
